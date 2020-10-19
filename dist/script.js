@@ -90,10 +90,40 @@
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-console.log('ok');
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modules_features__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/features */ "./src/js/modules/features.js");
+
+window.addEventListener('DOMContentLoaded', function () {
+  Object(_modules_features__WEBPACK_IMPORTED_MODULE_0__["default"])();
+});
+
+/***/ }),
+
+/***/ "./src/js/modules/features.js":
+/*!************************************!*\
+  !*** ./src/js/modules/features.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var features = function features() {
+  var featuresArray = ['Web Designer', 'Web developer'];
+
+  function setFeatures() {
+    var container = document.querySelector('.starter__features');
+    container.textContent = featuresArray[0];
+  }
+
+  setFeatures();
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (features);
 
 /***/ })
 
