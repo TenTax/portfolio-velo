@@ -85,6 +85,19 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    background-color: rgba(40,40,40,0);
+    transition-property: background-color;
+    transition-duration: 0.4s;
+}
+.header__logo {
+    transition-property: font-size;
+    transition-duration: 0.4s;
+}
+.header--scroll {
+    background-color: rgba(40,40,40,1);
+}
+.header--scroll .header__logo {
+    font-size: 40px;
 }
 .header__container {
     display: flex;

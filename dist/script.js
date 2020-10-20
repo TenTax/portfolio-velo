@@ -1425,10 +1425,13 @@ module.exports = g;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_features__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/features */ "./src/js/modules/features.js");
+/* harmony import */ var _modules_windowActionsScroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/windowActionsScroll */ "./src/js/modules/windowActionsScroll.js");
+/* harmony import */ var _modules_features__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/features */ "./src/js/modules/features.js");
+
 
 window.addEventListener('DOMContentLoaded', function () {
-  Object(_modules_features__WEBPACK_IMPORTED_MODULE_0__["default"])(['Web Designer', 'Freelancer', 'Front End Developer op!']);
+  Object(_modules_windowActionsScroll__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  Object(_modules_features__WEBPACK_IMPORTED_MODULE_1__["default"])(['Web Designer', 'Freelancer', 'Front End Developer op!']);
 });
 
 /***/ }),
@@ -1471,6 +1474,55 @@ var features = function features(featuresArray) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (features);
+
+/***/ }),
+
+/***/ "./src/js/modules/headerScroll.js":
+/*!****************************************!*\
+  !*** ./src/js/modules/headerScroll.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var headerScroll = function headerScroll(mode) {
+  var header = document.querySelector('.header');
+
+  if (mode == 'scrolling') {
+    header.classList.add('header--scroll');
+  } else {
+    header.classList.remove('header--scroll');
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (headerScroll);
+
+/***/ }),
+
+/***/ "./src/js/modules/windowActionsScroll.js":
+/*!***********************************************!*\
+  !*** ./src/js/modules/windowActionsScroll.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _headerScroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./headerScroll */ "./src/js/modules/headerScroll.js");
+
+
+var windowActionScroll = function windowActionScroll() {
+  window.addEventListener('scroll', function () {
+    if (document.documentElement.scrollTop == 0) {
+      Object(_headerScroll__WEBPACK_IMPORTED_MODULE_0__["default"])('noscroll');
+    } else {
+      Object(_headerScroll__WEBPACK_IMPORTED_MODULE_0__["default"])('scrolling');
+    }
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (windowActionScroll);
 
 /***/ })
 
