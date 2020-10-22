@@ -1742,55 +1742,16 @@ module.exports = g;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_windowActionsScroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/windowActionsScroll */ "./src/js/modules/windowActionsScroll.js");
-/* harmony import */ var _modules_burgerAction__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/burgerAction */ "./src/js/modules/burgerAction.js");
+/* harmony import */ var _modules_menuAction__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/menuAction */ "./src/js/modules/menuAction.js");
 /* harmony import */ var _modules_features__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/features */ "./src/js/modules/features.js");
 
 
 
 window.addEventListener('DOMContentLoaded', function () {
   Object(_modules_windowActionsScroll__WEBPACK_IMPORTED_MODULE_0__["default"])();
-  Object(_modules_burgerAction__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  Object(_modules_menuAction__WEBPACK_IMPORTED_MODULE_1__["default"])();
   Object(_modules_features__WEBPACK_IMPORTED_MODULE_2__["default"])(['Web Designer', 'Freelancer', 'Front End Developer op!']);
 });
-
-/***/ }),
-
-/***/ "./src/js/modules/burgerAction.js":
-/*!****************************************!*\
-  !*** ./src/js/modules/burgerAction.js ***!
-  \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each */ "./node_modules/core-js/modules/es.array.for-each.js");
-/* harmony import */ var core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
-/* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-var burgerAction = function burgerAction() {
-  var burger = document.querySelector('.burger'),
-      nav = document.querySelector('.header__nav'),
-      navLinks = document.querySelectorAll('.nav__link'),
-      body = document.body;
-  burger.addEventListener('click', function () {
-    burger.classList.toggle('burger--active');
-    nav.classList.toggle('header__nav--active');
-    body.classList.toggle('body-lock');
-  });
-  navLinks.forEach(function (item) {
-    item.addEventListener('click', function (e) {
-      burger.classList.remove('burger--active');
-      nav.classList.remove('header__nav--active');
-      body.classList.remove('body-lock');
-    });
-  });
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (burgerAction);
 
 /***/ }),
 
@@ -1832,6 +1793,45 @@ var features = function features(featuresArray) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (features);
+
+/***/ }),
+
+/***/ "./src/js/modules/menuAction.js":
+/*!**************************************!*\
+  !*** ./src/js/modules/menuAction.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+var menuAction = function menuAction() {
+  var burger = document.querySelector('.burger'),
+      nav = document.querySelector('.header__nav'),
+      navLinks = document.querySelectorAll('.nav__link'),
+      body = document.body;
+  burger.addEventListener('click', function () {
+    burger.classList.toggle('burger--active');
+    nav.classList.toggle('header__nav--active');
+    body.classList.toggle('body-lock');
+  });
+  navLinks.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      burger.classList.remove('burger--active');
+      nav.classList.remove('header__nav--active');
+      body.classList.remove('body-lock');
+    });
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (menuAction);
 
 /***/ }),
 

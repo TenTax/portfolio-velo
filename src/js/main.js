@@ -1,9 +1,9 @@
 import windowActionScroll from './modules/windowActionsScroll';
-import burgerAction from './modules/burgerAction';
+import menuAction from './modules/menuAction';
 import features from './modules/features';
 
 window.addEventListener('DOMContentLoaded', () => {
     windowActionScroll();
-    burgerAction();
+    menuAction();
     features(['Web Designer', 'Freelancer', 'Front End Developer op!']);
 });

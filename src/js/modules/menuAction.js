@@ -1,4 +1,4 @@
-const burgerAction = () => {
+const menuAction = () => {
     const   burger = document.querySelector('.burger'),
             nav = document.querySelector('.header__nav'),
             navLinks = document.querySelectorAll('.nav__link'),
@@ -19,4 +19,4 @@ const burgerAction = () => {
     });
 };
 
-export default burgerAction;
+export default menuAction;
