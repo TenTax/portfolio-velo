@@ -182,6 +182,7 @@ body {
 .starter__title {
     font-family: 'Oswald', sans-serif;
     font-size: 112px;
+    text-align: center;
 }
 .starter__features {
     display: flex;
@@ -231,6 +232,7 @@ body {
 .about__row {
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .about__column {
     width: 100%;
@@ -309,6 +311,8 @@ body {
         height: 100vh;
         transition-property: top;
         transition-duration: 0.3s;
+        overflow: auto;
+        padding-top: 60px;
     }
     .header__nav .nav__link {
         font-size: 20px;
@@ -323,32 +327,92 @@ body {
     .header--scroll .header__logo {
         font-size: 20px;
     }
+
+    .starter {
+        background: #121212;
+    }
+    .starter__container {
+        justify-content: center;
+    }
+    .starter__title {
+        font-size: 80px;
+    }
+
+    .about {
+        margin: 0;
+    }
+    .about__image {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width:576px) and (max-width:767.98px) {
     .container {
         width: 540px;
     }
+
+    .header {
+        padding: 20px 0;
+        height: 60px;
+    }
+    .header:before {
+        opacity: 1;
+    }
+    .header__burger {
+        display: flex;
+    }
+    .header__logo {
+        font-size: 20px;
+    }
+    .header__nav {
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: -100vh;
+        left: 0;
+        z-index: 10;
+        background-color: #333;
+        width: 100%;
+        height: 100vh;
+        transition-property: top;
+        transition-duration: 0.3s;
+        overflow: auto;
+        padding-top: 60px;
+    }
+    .header__nav .nav__link {
+        font-size: 20px;
+    }
+    .header__nav .nav__link:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .header__nav--active {
+        top: 0;
+    }
+    .header--scroll .header__logo {
+        font-size: 20px;
+    }
+
+    .starter {
+        background: #121212;
+    }
+    .starter__container {
+        justify-content: center;
+    }
 }
 @media (min-width:768px) and (max-width:991.98px) {
     .container {
         width: 720px;
+    }
+
+    .starter {
+        background: #121212;
+    }
+    .starter__container {
+        justify-content: center;
     }
 }
 @media (min-width:992px) and (max-width:1199.98px) {
