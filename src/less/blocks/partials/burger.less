@@ -1,0 +1,24 @@
+.burger {
+    display: flex;
+    flex-direction: column;
+    width: 24px;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.burger__item {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition-property: transform, opacity;
+    transition-duration: 0.3s;
+}
+.burger--active .burger__item:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 8px);
+}
+.burger--active .burger__item:nth-child(2) {
+    opacity: 0;
+}
+.burger--active .burger__item:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -8px);
+}
