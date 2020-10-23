@@ -5,81 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-Velo</title>
     <link href="https://fonts.googleapis.com/css2?family=Karla&family=Oswald:wght@700&family=Poppins:wght@200;300;500;600&family=Syncopate&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__container container">
-            <a href="#" class="header__logo logo">Velo</a>
-            <div class="header__burger burger">
-                <span class="burger__item"></span>
-                <span class="burger__item"></span>
-                <span class="burger__item"></span>
-            </div>
-            <nav class="header__nav nav">
-                <a href="#home" class="nav__link link link--active">home</a>
-                <a href="#about" class="nav__link link">about</a>
-                <a href="#services" class="nav__link link">services</a>
-                <a href="#portfolio" class="nav__link link">portfolio</a>
-                <a href="#contacts" class="nav__link link">contacts</a>
-            </nav>
-        </div>
-    </header>
+    
+    {% include './twig-partials/header.html' %}
+    {% include './twig-partials/starter.html' %}
+    {% include './twig-partials/about.html' %}
+    {% include './twig-partials/services.html' %}
+    {% include './twig-partials/portfolio.html' %}
+    {% include './twig-partials/contacts.html' %}
 
-    <section class="starter" id="home">
-        <div class="starter__container container">
-            <div class="starter__box">
-                <h1 class="starter__title">John Doe</h1>
-                <div class="starter__features"></div>
-                <div class="starter__row">
-                    <a href="#" class="starter__link starter__link--portfolio link">Portfolio</a>
-                    <a href="#" class="starter__link starter__link--contacts link">Contacts</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about" id="about">
-        <div class="about__container container">
-            <div class="about__row row">
-                <div class="about__column column">
-                    <img src="assets/img/about.jpg" alt="about" class="about__image image">
-                </div>
-                
-                <div class="about__column column">
-                    <h2 class="about__title title">About</h2>
-                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aperiam labore nemo incidunt cumque nam, possimus rerum. Sed asperiores alias dolores unde adipisci modi, quibusdam quod ad natus repellendus cupiditate. Eius, sint dolor? l. Repellendus!</p>
-                </div>
-                <div class="about__column column">
-                    <h3 class="about__subtitle subtitle">Let's collaborate!</h3>
-                    <p class="text">I'm open for collaborations. I can made for you great web designs, portfolios, landing pages and much others at good price.</p>
-                    <a href="#" class="about__link link link--blue">- Hire me</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <div class="services__container container">
-            <div class="services__row row">
-                <div class="services__column column">
-                    <h2 class="services__title title">Services</h2>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, beatae.</p>
-                    <a href="#" class="services__link link link--blue">- Hire me</a>
-                </div>
-                <div class="services__column column">
-                    ol1
-                </div>
-                <div class="services__column column">
-                    ol1
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="portfolio" id="portfolio">portfolio</section>
-    <section class="contacts" id="contacts">contacts</section>
-
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

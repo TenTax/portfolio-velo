@@ -1,0 +1,122 @@
+.body-lock {
+    overflow: hidden;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.image {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 48px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.title {
+    font-size: 65px;
+    font-weight: 300;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+.link--blue {
+    font-size: 18px;
+    color: #6666ff;
+}
+.link:hover, .link--active {
+    color: orangered;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    width: 24px;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.burger__item {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition-property: transform, opacity;
+    transition-duration: 0.3s;
+}
+.burger--active .burger__item:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 8px);
+}
+.burger--active .burger__item:nth-child(2) {
+    opacity: 0;
+}
+.burger--active .burger__item:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -8px);
+}
+
+.nav {
+    display: flex;
+}
+.nav__link {
+    font-size: 16px;
+}
+.nav__link:not(:last-child) {
+    margin-right: 40px;
+}
+
+@media (max-width:575.98px) {
+    .container {
+        width: 100%;
+    }
+}
+@media (min-width:576px) and (max-width:767.98px) {
+    .container {
+        width: 540px;
+    }
+}
+@media (min-width:768px) and (max-width:991.98px) {
+    .container {
+        width: 720px;
+    }
+}
+@media (min-width:992px) and (max-width:1199.98px) {
+    .container {
+        width: 960px;
+    }
+}
+@media (min-width:1200px) and (max-width:1380px) {
+    .container {
+        width: 1140px;
+    }
+}
