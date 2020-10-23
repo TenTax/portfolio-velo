@@ -4,12 +4,14 @@
     background-position: right 100px;
     background-size: auto 110%;
     background-repeat: no-repeat;
+
     &__container {
         display: flex;
         align-items: center;
         min-height: 100vh;
         max-width: 992px;
     }
+
     &__box {
         display: flex;
         flex-direction: column;
@@ -17,11 +19,13 @@
         position: relative;
         top: 50px;
     }
+
     &__title {
         font-family: 'Oswald', sans-serif;
         font-size: 112px;
         text-align: center;
     }
+
     &__features {
         display: flex;
         align-items: center;
@@ -30,10 +34,12 @@
         border-right: 1px solid #fff;
         margin-top: 50px;
     }
+
     &__row {
         display: flex;
         margin-top: 50px;
     }
+
     &__link {
         display: flex;
         justify-content: center;
@@ -42,18 +48,22 @@
         width: 120px;
         height: 50px;
     }
+
     &__link:not(:last-child) {
         margin-right: 20px;
     }
+
     &__link--portfolio {
         background-color: #fff;
         color: #121212;
         transition-property: background-color;
     }
+
     &__link--portfolio:hover {
         background-color: #ddd;
         color: #121212;
     }
+
     &__link--contacts:hover {
         color: blue;
     }
@@ -62,33 +72,41 @@
 @media (max-width:575.98px) {
     .starter {
         background: #121212;
+
         &__container {
             justify-content: center;
         }
+
         &__title {
             font-size: 80px;
         }
     }
 }
+
 @media (min-width:576px) and (max-width:767.98px) {
     .starter {
         background: #121212;
+
         &__container {
             justify-content: center;
         }
     }
 }
+
 @media (min-width:768px) and (max-width:991.98px) {
     .starter {
         background: #121212;
+
         &__container {
             justify-content: center;
         }
     }
 }
+
 @media (min-width:992px) and (max-width:1199.98px) {
     //
 }
+
 @media (min-width:1200px) and (max-width:1380px) {
     //
 }
