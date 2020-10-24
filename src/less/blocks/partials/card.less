@@ -1,0 +1,58 @@
+.card {
+    padding         : 30px;
+    background-color: #666;
+
+    &__row {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+    }
+
+    &__title {
+        font-size  : 18px;
+        font-weight: 300;
+    }
+
+    &__label {
+        padding         : 8px;
+        background-color: rgba(100, 100, 100, 0.5);
+        font-size       : 12px;
+        font-weight     : 400;
+        border-radius   : 5px;
+    }
+
+    &__subtitle {
+        font-weight: 200;
+        font-size  : 12px;
+        margin-top : 10px;
+    }
+
+    &__text {
+        font-size  : 14px;
+        font-weight: 300;
+        margin-top : 20px;
+        line-height: 24px;
+    }
+
+    &__subtext {
+        display    : block;
+        font-weight: 200;
+        font-size  : 14px;
+        margin-top : 30px;
+    }
+}
+
+// phone
+@media (max-width:575.98px) {
+    .card {
+        padding: 30px 20px;
+
+        &__text {
+            line-height: 20px;
+        }
+
+        &__subtext {
+            display: none;
+        }
+    }
+}
