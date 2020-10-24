@@ -1,1 +1,39 @@
-<section class="portfolio" id="portfolio">portfolio</section>
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <h2 class="portfolio__title title">My Works</h2>
+        <p class="portfolio__text text">These are all my projects that I have worked on so far</p>
+        <div class="tabs">
+            <div class="tabs__navbar">
+                <button class="tabs__btn tabs__btn--active link" data-sort="all">All</button>
+                <button class="tabs__btn link" data-sort="design">Design</button>
+                <button class="tabs__btn link" data-sort="dev">Development</button>
+            </div>
+            <div class="tabs__content">
+                <div class="layer tabs__card tabs__card--visible" data-category="design">
+                    <img src="img/img1.jpg" alt="" class="layer__image">
+                    <div class="layer__content">
+                        <div class="layer__openlink">
+                            {% include './svg-icons/focus.svg' %}
+                        </div>
+                        <div>
+                            <h3 class="layer__title">Design</h3>
+                            <p class="text">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer tabs__card tabs__card--visible" data-category="dev">
+                    <img src="img/img2.jpg" alt="" class="layer__image">
+                    <div class="layer__content">
+                        <div class="layer__openlink">
+                            {% include './svg-icons/focus.svg' %}
+                        </div>
+                        <div>
+                            <h3 class="layer__title">Development</h3>
+                            <p class="text">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

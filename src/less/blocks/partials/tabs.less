@@ -1,0 +1,44 @@
+.tabs {
+    &__navbar {
+        display      : flex;
+        margin-bottom: 30px;
+    }
+
+    &__content {
+        display  : flex;
+        flex-wrap: wrap;
+        position : relative;
+    }
+
+    &__btn {
+        display            : flex;
+        padding            : 10px;
+        font-size          : 14px;
+        font-weight        : 300;
+        border-radius      : 20px;
+        background-color   : transparent;
+        border             : none;
+        outline            : none;
+        transition-property: background-color, color;
+        transition-duration: 0.3s;
+        cursor             : pointer;
+    }
+
+    &__btn:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    &__btn--active {
+        background-color: rgba(100, 100, 100, 0.5);
+        color           : orangered;
+    }
+
+    &__card {
+        display: none;
+        margin : 10px;
+    }
+
+    &__card--visible {
+        display: block;
+    }
+}
