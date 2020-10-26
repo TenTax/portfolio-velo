@@ -4,6 +4,7 @@ import features from './modules/features';
 import tabs from './modules/tabs';
 import forms from './modules/forms';
 import modals from './modules/modals';
+import anchors from './modules/anchors';
 
 window.addEventListener('DOMContentLoaded', () => {
     windowActionScroll();
@@ -12,4 +13,5 @@ window.addEventListener('DOMContentLoaded', () => {
     tabs();
     forms();
     modals();
+    anchors();
 });

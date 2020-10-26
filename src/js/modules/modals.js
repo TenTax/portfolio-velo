@@ -12,7 +12,6 @@ const modals = () => {
                 modal.classList.add('popup--visible');
                 document.body.classList.add('body-lock');
                 document.body.style.marginRight = scroll + 'px';
-                console.log(scroll)
             });
         });
 
