@@ -18,8 +18,8 @@ const imagemin = require('gulp-imagemin');
 
 const distfolder = './dist/';
 
-// const buildfolder   = './build/';
-const buildfolder = '../../OpenServer/domains/portfolio-velo/';
+const buildfolder   = './build/';
+// const buildfolder = '../../OpenServer/domains/portfolio-velo/';
 
 
 
