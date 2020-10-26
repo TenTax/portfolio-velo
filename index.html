@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>Portfolio-Velo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Oswald:wght@700&family=Poppins:wght@200;300;500;600&family=Syncopate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container container">
+            <a href="#" class="header__logo logo">Velo</a>
+            <div class="header__burger burger">
+                <span class="burger__item"></span>
+                <span class="burger__item"></span>
+                <span class="burger__item"></span>
+            </div>
+            <nav class="header__nav nav">
+                <a href="#home" class="nav__link link link--active">home</a>
+                <a href="#about" class="nav__link link">about</a>
+                <a href="#services" class="nav__link link">services</a>
+                <a href="#portfolio" class="nav__link link">portfolio</a>
+                <a href="#contacts" class="nav__link link">contacts</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="starter" id="home">
+        <div class="starter__container container">
+            <div class="starter__box">
+                <h1 class="starter__title">John Doe</h1>
+                <div class="starter__features"></div>
+                <div class="starter__row">
+                    <a href="#" class="starter__link starter__link--portfolio link">Portfolio</a>
+                    <a href="#" class="starter__link starter__link--contacts link">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about__container container">
+            <img src="img/about.jpg" alt="" class="about__image image">
+            <div class="about__content">
+                <div class="about__col">
+                    <h2 class="about__title title">About</h2>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at tortor dui. Integer
+                        purus justo, volutpat sit amet nisl vitae, tempus ullamcorper magna. Cras eleifend sem non pretium
+                        rutrum.</p>
+                </div>
+                <div class="about__col">
+                    <h3 class="about__subtitle subtitle">Let's collaborate!</h3>
+                    <p class="text">I'm open for collaborations. I can made for you great web designs, portfolios, landing
+                        pages and much others at good price.</p>
+                    <a href="#" class="about__link link link--blue">- Hire me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="services__container container">
+            <div class="services__col">
+                <h2 class="services__title title">Services</h2>
+                <p class="text">Here it's my services that can i do, my skills and my experience.</p>
+                <a href="" class="services__link link link--blue">- Hire me</a>
+            </div>
+            <div class="services__col">
+                <div class="services__card services__card--silver card">
+                    <div class="card__row">
+                        <h3 class="card__title">UI/UX Design</h3>
+                        <div class="card__label">Very good</div>
+                    </div>
+                    <div class="card__subtitle">2 years experience</div>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at tortor dui.
+                    </p>
+                    <span class="card__subtext">Adobe XD, Adobe Photoshop, Adobe Illustrator</span>
+                </div>
+                <div class="services__card services__card--gold card">
+                    <div class="card__row">
+                        <h3 class="card__title">Web Development</h3>
+                        <div class="card__label">Very good</div>
+                    </div>
+                    <div class="card__subtitle">3 years experience</div>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at tortor dui.
+                    </p>
+                    <span class="card__subtext">HTML5, CSS3, JavaScript, PHP, Wordpress</span>
+                </div>
+            </div>
+            <div class="services__col">
+                <div class="services__card services__card--silver card">
+                    <div class="card__row">
+                        <h3 class="card__title">Digital Design</h3>
+                        <div class="card__label">Good</div>
+                    </div>
+                    <div class="card__subtitle">1 years experience</div>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at tortor dui.
+                    </p>
+                    <span class="card__subtext">Adobe Illustrator, Adobe Photoshop</span>
+                </div>
+                <div class="services__card services__card--gold card">
+                    <div class="card__row">
+                        <h3 class="card__title">Photo & Video Editing</h3>
+                        <div class="card__label">Good</div>
+                    </div>
+                    <div class="card__subtitle">1 years experience</div>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at tortor dui.
+                    </p>
+                    <span class="card__subtext">Adobe XD, Adobe Photoshop, Adobe Illustrator</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="portfolio__title title">My Works</h2>
+            <p class="portfolio__text text">These are all my projects that I have worked on so far</p>
+            <div class="tabs">
+                <div class="tabs__navbar">
+                    <button class="tabs__btn tabs__btn--active link" data-sort="all">All</button>
+                    <button class="tabs__btn link" data-sort="design">Design</button>
+                    <button class="tabs__btn link" data-sort="dev">Development</button>
+                </div>
+                <div class="tabs__content">
+                    <div class="layer tabs__card tabs__card--visible" data-trigger="popup-1" data-category="design">
+                        <img src="img/img1.jpg" alt="" class="layer__image">
+                        <div class="layer__content">
+                            <div class="layer__openlink">
+                                <?xml version="1.0"?>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m497 0h-90c-8.284 0-15 6.716-15 15s6.716 15 15 15h75v75c0 8.284 6.716 15 15 15s15-6.716 15-15v-90c0-8.284-6.716-15-15-15z" fill="#ffffff" data-original="#000000" style="" />
+                                            <path d="m105 0h-90c-8.284 0-15 6.716-15 15v90c0 8.284 6.716 15 15 15s15-6.716 15-15v-75h75c8.284 0 15-6.716 15-15s-6.716-15-15-15z" fill="#ffffff" data-original="#000000" style="" />
+                                            <path d="m105 482h-75v-75c0-8.284-6.716-15-15-15s-15 6.716-15 15v90c0 8.284 6.716 15 15 15h90c8.284 0 15-6.716 15-15s-6.716-15-15-15z" fill="#ffffff" data-original="#000000" style="" />
+                                            <path d="m497 392c-8.284 0-15 6.716-15 15v75h-75c-8.284 0-15 6.716-15 15s6.716 15 15 15h90c8.284 0 15-6.716 15-15v-90c0-8.284-6.716-15-15-15z" fill="#ffffff" data-original="#000000" style="" />
+                                            <path d="m316 241h-45v-45c0-8.284-6.716-15-15-15s-15 6.716-15 15v45h-45c-8.284 0-15 6.716-15 15s6.716 15 15 15h45v45c0 8.284 6.716 15 15 15s15-6.716 15-15v-45h45c8.284 0 15-6.716 15-15s-6.716-15-15-15z" fill="#ffffff" data-original="#000000" style="" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="layer__title">Design</h3>
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer tabs__card tabs__card--visible" data-trigger="popup-2" data-category="dev">
+                        <img src="img/img2.jpg" alt="" class="layer__image">
+                        <div class="layer__content">
+                            <div class="layer__openlink">
+                                <?xml version="1.0"?>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m497 0h-90c-8.284 0-15 6.716-15 15s6.716 15 15 15h75v75c0 8.284 6.716 15 15 15s15-6.716 15-15v-90c0-8.284-6.716-15-15-15z" fill="#ffffff" data-original="#000000" style="" />
+                                            <path d="m105 0h-90c-8.284 0-15 6.716-15 15v90c0 8.284 6.716 15 15 15s15-6.716 15-15v-75h75c8.284 0 15-6.716 15-15s-6.716-15-15-15z" fill="#ffffff" data-original="#000000" style="" />
+                                            <path d="m105 482h-75v-75c0-8.284-6.716-15-15-15s-15 6.716-15 15v90c0 8.284 6.716 15 15 15h90c8.284 0 15-6.716 15-15s-6.716-15-15-15z" fill="#ffffff" data-original="#000000" style="" />
+                                            <path d="m497 392c-8.284 0-15 6.716-15 15v75h-75c-8.284 0-15 6.716-15 15s6.716 15 15 15h90c8.284 0 15-6.716 15-15v-90c0-8.284-6.716-15-15-15z" fill="#ffffff" data-original="#000000" style="" />
+                                            <path d="m316 241h-45v-45c0-8.284-6.716-15-15-15s-15 6.716-15 15v45h-45c-8.284 0-15 6.716-15 15s6.716 15 15 15h45v45c0 8.284 6.716 15 15 15s15-6.716 15-15v-45h45c8.284 0 15-6.716 15-15s-6.716-15-15-15z" fill="#ffffff" data-original="#000000" style="" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="layer__title">Development</h3>
+                                <p class="text">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="contacts__container container">
+            <h2 class="contacts__title title">Contacts</h2>
+            <p class="contacts__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et.</p>
+            <form class="contacts__form form" novalidate>
+                <div class="form__row">
+                    <div class="form__group">
+                        <input type="text" name="Name" class="form__input" placeholder="Full Name*">
+                    </div>
+                    <div class="form__group">
+                        <input type="email" name="Email" class="form__input" placeholder="Email*">
+                    </div>
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__input" name="Subject" placeholder="Subject*">
+                </div>
+                <div class="form__group">
+                    <textarea class="form__input form__input--textarea" name="Message" placeholder="Message*"></textarea>
+                </div>
+                <button type="submit" class="form__btn">Send</button>
+            </form>
+
+            <div class="findme">
+                <h3 class="findme__title title">Find me on</h3>
+                <nav class="findme__nav nav">
+                    <a href="#" class="nav__link link">Dribble</a>
+                    <a href="#" class="nav__link link">Instagram</a>
+                    <a href="#" class="nav__link link">LinkedIn</a>
+                    <a href="#" class="nav__link link">Behance</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__text text">© Copyright Velo 2020. All rights reserved</div>
+        </div>
+    </footer>
+
+    <div class="popup" id="popup-1">
+        <div class="popup__container">
+            <div class="popup__header">
+                <div class="popup__close">
+                    <?xml version="1.0"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 357 357" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                        <g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                                <g id="close">
+                                    <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3     214.2,178.5   " fill="#ffffff" data-original="#000000" style="" class="" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="popup__image" style="background-image: url(./img/img1.jpg);"></div>
+            <div class="popup__content">
+                <p class="popup__subtitle subtitle">Design</p>
+                <h3 class="popup__title title">Lorem ipsum dolor sit amet</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at tortor dui. Integer
+                    purus justo, volutpat sit amet nisl vitae, tempus ullamcorper magna. Cras eleifend sem non pretium
+                    rutrum. Donec convallis hendrerit velit, id rhoncus eros consectetur non.</p>
+                <h4 class="popup__title popup__title--small title">Features</h4>
+                <div>
+                    <span class="popup__text popup__text--mute">Responsive Design</span>
+                    <span class="popup__text popup__text--mute">Bootstrap v4 Framework</span>
+                    <span class="popup__text popup__text--mute">W3C Valid HTML Code</span>
+                    <span class="popup__text popup__text--mute">3 HTML Styles</span>
+                </div>
+                <a href="#" class="popup__link link">Demo</a>
+                <nav class="popup__nav nav">
+                    <span class="nav__link">
+                        <?xml version="1.0"?>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 682 682.66669" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                            <g transform="matrix(0.9100000000000001,0,0,0.9100000000000001,85.63804685354216,48.799999999999955)">
+                                <path xmlns="http://www.w3.org/2000/svg" d="m-1.917969 0 55.332031 576.875 231.453126 63.125 231.453124-63.125 55.332032-576.875zm458.964844 199.222656-244.824219-.003906 4.097656 44.785156h239.566407l-19.359375 250.238282-150.214844 43.691406-161.230469-50.144532v-101.480468h100.15625v30.222656l61.097657 18.878906 57.878906-18.890625 4.214844-74.925781h-221.796876l-25.039062-238.707031h355.453125zm0 0" fill="#ffffff" data-original="#000000" style="" class="" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="nav__link">
+                        <?xml version="1.0"?>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                            <g transform="matrix(0.87,0,0,0.87,33.28,33.28)">
+                                <g xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path d="M32,0l40.8,460.8L256,512l183.136-51.168L480,0H32z M392.768,150.688l-5.152,57.888l-15.52,173.568L256,414.208    l-0.064,0.032l-116-32.128l-8.128-90.752h56.832l4.224,47.104l63.072,17.024l0.064-0.064l63.136-17.024l8.608-78.432    l-198.656,0.544l-5.632-53.664l209.056-2.432l4.224-57.44l-218.88,0.608l-3.68-53.376H256h141.824L392.768,150.688z" fill="#ffffff" data-original="#000000" style="" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="nav__link">
+                        <?xml version="1.0"?>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 387.2 387.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                            <g transform="matrix(0.9199999999999999,0,0,0.9199999999999999,15.487999877929695,15.48799926757809)">
+                                <g xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path d="M304.8,10.84l0-0.04C297.927,3.891,288.585,0.004,278.84,0H108.32C88.067,0.066,71.666,16.467,71.6,36.72v313.72    c0.004,9.745,3.891,19.087,10.8,25.96c6.863,6.899,16.189,10.785,25.92,10.8h170.56c9.731-0.015,19.057-3.901,25.92-10.8    c6.899-6.863,10.785-16.189,10.8-25.92V36.76C315.585,27.029,311.699,17.703,304.8,10.84z M193.6,362.28L193.6,362.28    c-5.479,0-9.92-4.441-9.92-9.92c0-5.479,4.441-9.92,9.92-9.92c5.479,0,9.92,4.441,9.92,9.92    C203.52,357.839,199.079,362.28,193.6,362.28z M286.44,300c0,13.255-10.745,24-24,24H124.72c-13.255,0-24-10.745-24-24V66.2    c0-13.255,10.745-24,24-24h137.76c13.255,0,24,10.745,24,24L286.44,300z" fill="#ffffff" data-original="#000000" style="" class="" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="nav__link">
+                        <?xml version="1.0"?>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 368 368" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                            <g transform="matrix(0.88,0,0,0.88,22.079999999999956,22.079999999999956)">
+                                <path xmlns="http://www.w3.org/2000/svg" d="m344 0h-320c-13.230469 0-24 10.769531-24 24v320c0 13.230469 10.769531 24 24 24h320c13.230469 0 24-10.769531 24-24v-320c0-13.230469-10.769531-24-24-24zm8 344c0 4.414062-3.59375 8-8 8h-320c-4.40625 0-8-3.585938-8-8v-320c0-4.40625 3.59375-8 8-8h320c4.40625 0 8 3.59375 8 8zm0 0" fill="#ffffff" data-original="#000000" style="" class="" />
+                                <path xmlns="http://www.w3.org/2000/svg" d="m216 64h-112c-4.414062 0-8 3.585938-8 8v224c0 4.425781 3.585938 8 8 8h112c30.878906 0 56-25.128906 56-56v-16c0-20.34375-10.902344-38.191406-27.175781-48 16.273437-9.808594 27.175781-27.65625 27.175781-48v-16c0-30.878906-25.121094-56-56-56zm40 168v16c0 22.054688-17.945312 40-40 40h-104v-96h104c22.054688 0 40 17.945312 40 40zm0-96c0 22.054688-17.945312 40-40 40h-104v-96h104c22.054688 0 40 17.945312 40 40zm0 0" fill="#ffffff" data-original="#000000" style="" class="" />
+                            </g>
+                        </svg>
+                    </span>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-2">
+        <div class="popup__container">
+            <div class="popup__header">
+                <div class="popup__close">
+                    <?xml version="1.0"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 357 357" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                        <g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                                <g id="close">
+                                    <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3     214.2,178.5   " fill="#ffffff" data-original="#000000" style="" class="" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="popup__image" style="background-image: url(./img/img2.jpg);"></div>
+            <div class="popup__content">
+                <p class="popup__subtitle subtitle">Development</p>
+                <h3 class="popup__title title">Lorem ipsum dolor sit amet</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at tortor dui. Integer
+                    purus justo, volutpat sit amet nisl vitae, tempus ullamcorper magna. Cras eleifend sem non pretium
+                    rutrum. Donec convallis hendrerit velit, id rhoncus eros consectetur non.</p>
+                <h4 class="popup__title popup__title--small title">Features</h4>
+                <div>
+                    <span class="popup__text popup__text--mute">Responsive Design</span>
+                    <span class="popup__text popup__text--mute">Bootstrap v4 Framework</span>
+                    <span class="popup__text popup__text--mute">W3C Valid HTML Code</span>
+                    <span class="popup__text popup__text--mute">3 HTML Styles</span>
+                </div>
+                <a href="#" class="popup__link link">Demo</a>
+                <nav class="popup__nav nav">
+                    <span class="nav__link">
+                        <?xml version="1.0"?>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 682 682.66669" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                            <g transform="matrix(0.9100000000000001,0,0,0.9100000000000001,85.63804685354216,48.799999999999955)">
+                                <path xmlns="http://www.w3.org/2000/svg" d="m-1.917969 0 55.332031 576.875 231.453126 63.125 231.453124-63.125 55.332032-576.875zm458.964844 199.222656-244.824219-.003906 4.097656 44.785156h239.566407l-19.359375 250.238282-150.214844 43.691406-161.230469-50.144532v-101.480468h100.15625v30.222656l61.097657 18.878906 57.878906-18.890625 4.214844-74.925781h-221.796876l-25.039062-238.707031h355.453125zm0 0" fill="#ffffff" data-original="#000000" style="" class="" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="nav__link">
+                        <?xml version="1.0"?>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                            <g transform="matrix(0.87,0,0,0.87,33.28,33.28)">
+                                <g xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path d="M32,0l40.8,460.8L256,512l183.136-51.168L480,0H32z M392.768,150.688l-5.152,57.888l-15.52,173.568L256,414.208    l-0.064,0.032l-116-32.128l-8.128-90.752h56.832l4.224,47.104l63.072,17.024l0.064-0.064l63.136-17.024l8.608-78.432    l-198.656,0.544l-5.632-53.664l209.056-2.432l4.224-57.44l-218.88,0.608l-3.68-53.376H256h141.824L392.768,150.688z" fill="#ffffff" data-original="#000000" style="" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="nav__link">
+                        <?xml version="1.0"?>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 387.2 387.2" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                            <g transform="matrix(0.9199999999999999,0,0,0.9199999999999999,15.487999877929695,15.48799926757809)">
+                                <g xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path d="M304.8,10.84l0-0.04C297.927,3.891,288.585,0.004,278.84,0H108.32C88.067,0.066,71.666,16.467,71.6,36.72v313.72    c0.004,9.745,3.891,19.087,10.8,25.96c6.863,6.899,16.189,10.785,25.92,10.8h170.56c9.731-0.015,19.057-3.901,25.92-10.8    c6.899-6.863,10.785-16.189,10.8-25.92V36.76C315.585,27.029,311.699,17.703,304.8,10.84z M193.6,362.28L193.6,362.28    c-5.479,0-9.92-4.441-9.92-9.92c0-5.479,4.441-9.92,9.92-9.92c5.479,0,9.92,4.441,9.92,9.92    C203.52,357.839,199.079,362.28,193.6,362.28z M286.44,300c0,13.255-10.745,24-24,24H124.72c-13.255,0-24-10.745-24-24V66.2    c0-13.255,10.745-24,24-24h137.76c13.255,0,24,10.745,24,24L286.44,300z" fill="#ffffff" data-original="#000000" style="" class="" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="nav__link">
+                        <?xml version="1.0"?>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 368 368" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                            <g transform="matrix(0.88,0,0,0.88,22.079999999999956,22.079999999999956)">
+                                <path xmlns="http://www.w3.org/2000/svg" d="m344 0h-320c-13.230469 0-24 10.769531-24 24v320c0 13.230469 10.769531 24 24 24h320c13.230469 0 24-10.769531 24-24v-320c0-13.230469-10.769531-24-24-24zm8 344c0 4.414062-3.59375 8-8 8h-320c-4.40625 0-8-3.585938-8-8v-320c0-4.40625 3.59375-8 8-8h320c4.40625 0 8 3.59375 8 8zm0 0" fill="#ffffff" data-original="#000000" style="" class="" />
+                                <path xmlns="http://www.w3.org/2000/svg" d="m216 64h-112c-4.414062 0-8 3.585938-8 8v224c0 4.425781 3.585938 8 8 8h112c30.878906 0 56-25.128906 56-56v-16c0-20.34375-10.902344-38.191406-27.175781-48 16.273437-9.808594 27.175781-27.65625 27.175781-48v-16c0-30.878906-25.121094-56-56-56zm40 168v16c0 22.054688-17.945312 40-40 40h-104v-96h104c22.054688 0 40 17.945312 40 40zm0-96c0 22.054688-17.945312 40-40 40h-104v-96h104c22.054688 0 40 17.945312 40 40zm0 0" fill="#ffffff" data-original="#000000" style="" class="" />
+                            </g>
+                        </svg>
+                    </span>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
